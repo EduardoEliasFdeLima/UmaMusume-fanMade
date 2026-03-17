@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.guia{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.guia .innerbody{
+    padding-top: 100px;
+    
+}
+
+.contain-guia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.char-guia{
+    position: relative;
+    width: 470px;
+    height: 400px;
+    background: #DDDAE1;
+    border-radius: 10px;
+}
+
+.char-guia img{
+    position: absolute;
+    bottom: 0;
+}
+
+.char-guia img:hover{
+    transition: .3s;
+    transform: translateX(8px);
+
+}
+
+.linkados{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 10px;
+    align-content: start;   /* impede o grid de espalhar verticalmente */
+}
+
+/* botão padrão */
+.linkados button{
+    border: none;
+    border-radius: 5px;
+    padding: 14px 20px;
+
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* link dentro do botão */
+.linkados a{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+     width: fit-content;
+    height: fit-content;
+}
+
+.linkados a i{
+    padding-right: 10px;
+     width: fit-content;
+    height: fit-content;
+}
+
+.linkados a i img{
+    width: 18px;
+}
+
+/* botão que ocupa linha inteira */
+.linkados .full{
+    grid-column: span 2;
+}
+
+/* hover */
+.linkados button:hover{
+    
+    transform: translateY(-2px);
+}
+
+.linkados.awful button{
+    background: rgba(160,140,255,0.7);
+}
+
+.linkados.bad button{
+    background: rgba(86, 177, 220, 0.7);
+}
+
+.linkados.normal button{
+    background: rgb(255, 242, 99);
+}
+
+.linkados.good button{
+    background: #fdb248;
+}
+
+.linkados.great button{
+    background: #ff84a9;
+    
+}
+
+
+@media screen and (max-width: 1300px){  
+    .guia{
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+        
+    .guia{
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    
+    .guia .innerbody{
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .contain-guia{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 250px;
+        /* align-items: center; */
+        justify-content: space-evenly;
+
+    }
+ 
+    .char-guia{
+       align-self: self-end;
+    }
+
+}
+
+
+@media screen and (max-width: 650px){
+    .contain-guia{
+        gap: 200px;
+        /* align-items: center; */
+        justify-content: space-evenly;
+    }
+ 
+    .guia{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+
+        
+    .char-guia{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background: #DDDAE1;
+        border-radius: 10px;
+    }
+
+    .char-guia img{
+        width: 100%;
+        height: auto;
+        right: 0;
+        bottom: 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px){
+     .guia .innerbody{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+        
+    .linkados{
+        display: flex;
+       flex-direction: column;
+        gap: 10px;
+        align-content: start;   /* impede o grid de espalhar verticalmente */
+    }
+
+    
+    .guia{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+      .contain-guia{
+        gap: 70px;
+        /* align-items: center; */
+        justify-content: space-evenly;
+    }
+}      

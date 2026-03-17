@@ -1,0 +1,68 @@
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px 100px;
+}
+
+footer p{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+
+footer.awful{
+    background: #C2B3ED;
+}
+
+footer.great{
+    background: #FF99B8;
+}
+
+footer.normal{
+    background: #FDF997;
+}
+
+footer.bad{
+    background: #78bdfa;
+}
+
+footer.good{
+    background: #fab951;
+}
+
+
+@media screen and (max-width: 1650px){
+    footer{
+         padding: 0px 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px){
+    footer img{
+        width: 100px;
+        height: auto;
+    }
+
+     footer p{
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px){
+     footer p{
+       
+       left: 100px;
+       margin-left: 0;
+        transform: none;
+        font-size: 15px;
+    }
+}
