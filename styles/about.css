@@ -101,6 +101,7 @@ body {
     z-index: 1;
     height: 990px;
     width: auto;
+    margin-left: 30px;
     /* background-color: cadetblue; */
 }
 
@@ -147,6 +148,7 @@ body {
     align-self: right;
     width: 50%;
     margin-top: 15%;
+    margin-right: 30px;
 }
 
 .text-about h1{
@@ -196,6 +198,22 @@ body {
         display: none;
     }
 }
+
+
+
+
+
+@media screen and (max-width: 1600px){   
+        
+    .specialimg{
+        margin-left: 0px;
+    }
+    
+    .text-about{
+        margin-right: 00px;
+    }
+}
+
 
 
 @media screen and (max-width: 1000px){   

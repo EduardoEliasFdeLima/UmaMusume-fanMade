@@ -115,11 +115,14 @@ header ul li:hover{
 }
 
 .backpurple img{
-    position: relative;
+ 
+}
+
+.ogu{
+       position: relative;
     z-index: 2;
     height: 100%;
 }
-
 
 .backpurple .ogu:hover{
     transition: .3s;
@@ -349,6 +352,11 @@ button{
         flex-direction: row;
         justify-content: space-between;
     }
+
+        
+    header{
+        padding: 20px 0px;
+    }
 }
 
 
@@ -445,7 +453,7 @@ button{
 
 @media screen and (max-width: 500px){
     .oguri{
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
      .left-text-oguri img{
@@ -476,19 +484,23 @@ button{
     } 
 
      .backpurple{
+        margin-top: 0;
+        position: relative;
         width: 100%;
-        height: 465px;
+        height: 400px;
     }
 
     .backpurple::before{
-        width: 90%;
-        height: 380px;
+        margin-left: 50px;
+        width: 70%;
+        height: 340px;
         left: 10px;
     }
 
     .backpurple::after {
-        width: 80%;
+        width: 75%;
         height: 250px;
+        animation: none;
     }
 
     .right-img-oguri{
@@ -504,6 +516,17 @@ button{
         font-size: 15px;
         font-weight: 600;
         padding: 13px 18px;
+    }
+
+
+    .ogu{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        align-self: self-end;
+
+        width: auto;
+        height: 350px;
     }
    
 }      
